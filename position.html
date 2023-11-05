@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: bisque;
+            border: 2px solid black;
+            margin: 2%; 
+            padding: 20px;
+        }
+        .box{
+            display:inline-block;
+            height: 100px;
+            width: 150px;
+            border: 1px solid yellowgreen;
+            text-align: center; 
+            margin-left: 10px;
+            background-color: aquamarine;
+            
+
+        }
+        #box3{
+            position: relative;
+            /* position reletive means relative its own static position */
+            top: 10px;
+            left: 5px;
+        }
+
+        .acontainer
+        {
+            background-color: rgb(230, 183, 126);
+            border: 2px solid black;
+            margin: 2%; 
+            padding: 20px;
+        }
+
+        #abox3{
+            position:absolute; 
+            /* position absolute means absolute to its its parent position  means container position container is parent */
+            top: 10px;
+            left: 5px;
+        }
+
+        .scontainer
+        {
+            background-color: rgb(230, 183, 126);
+            border: 2px solid black;
+            margin: 2%; 
+            padding: 20px;
+            height: 1000px;
+        }
+        #sbox3{
+            position:sticky; 
+            /* when page scroll it will stick to top 180 px and left 25 px */
+            top: 180px;
+            left: 25px;
+        }
+
+        .fcontainer
+        {
+            background-color: rgb(207, 208, 234);
+            border: 2px solid black;
+            margin: 2%; 
+            padding: 20px;
+            height: 400px;
+        }
+        #fbox3{
+            position:fixed; 
+            /*   it will fixed to postion if ppage scroll still it will show on that position */
+            bottom: 18px;
+            right: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>relative position</p>
+    <div class="box" id="box1"> box 1</div>
+    <div class="box" id="box2">box 2</div>
+    <div class="box" id="box3">box 3</div>
+    <div class="box" id="box4">box 4</div>
+    </div>
+
+    <div class="acontainer">
+        <p>absolute position</p>
+    <div class="box" id="abox1"> box 1</div>
+    <div class="box" id="abox2">box 2</div>
+    <div class="box" id="abox3">box 3</div>
+    <div class="box" id="abox4">box 4</div>
+    </div>
+
+    <div class="scontainer">
+        <p>sticky position</p>
+    <div class="box" id="sbox1"> box 1</div>
+    <div class="box" id="sbox2">box 2</div>
+    <div class="box" id="sbox3">box 3</div>
+    <div class="box" id="sbox4">box 4</div>
+    </div>
+
+    <div class="fcontainer">
+        <p>sticky position</p>
+    <div class="box" id="fbox1"> box 1</div>
+    <div class="box" id="fbox2">box 2</div>
+    <div class="box" id="fbox3">box 3</div>
+    <div class="box" id="fbox4">box 4</div>
+    </div>
+</body>
+</html>5

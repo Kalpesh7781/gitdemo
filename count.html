@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+         var count=0;
+         $("p").html("count is: "+count);
+         $("button").click(function(){
+            $("p").html("count is : "+(++count));
+         });
+      });
+    </script>
+    <style>
+        #div2{
+            align-items: center;
+            align-content: center;
+        }
+       button{
+        border-style: double;
+    border-radius: 50px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border-color: black;
+    margin-top: 35px;
+    margin-left: 44%;
+    font-family: cursive;
+       }
+      .container {
+        display: grid;
+        border-style: double;
+        border-color: aquamarine;
+        height: 300px;
+        width: 300px;
+        padding: auto;
+        align-content: center;
+        text-align: center;
+        vertical-align: middle;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div2">
+    <div class="container"><p></p></div>
+    <button>click me</button></div>
+  </body>
+</html>

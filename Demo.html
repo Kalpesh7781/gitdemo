@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".container").html("in a circle").addClass("container2");
+        });
+      });
+    </script>
+    <style>
+      .container2 {
+    display: flex;
+    border-style: double !important;
+    border-radius: 50% !important;
+    border-color: brown !important;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+      .container {
+        display: grid;
+        border-style: double;
+        border-color: aquamarine;
+        height: 300px;
+        width: 300px;
+        padding: auto;
+        align-content: center;
+        text-align: center;
+        vertical-align: middle;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">it is container class</div>
+    <button>click me</button>
+  </body>
+</html>
